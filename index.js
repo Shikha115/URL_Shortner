@@ -19,5 +19,5 @@ app.use("/url", require("./routes/url"));
 
 //server
 app.listen(port, () =>
-  console.log(`Server Started at http://localhost:${port}`)
+  console.log(`Server Started at https://url-shortner-two-gamma.vercel.app:${port}`)
 );

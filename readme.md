@@ -18,7 +18,7 @@ This project is a URL shortener that takes long URLs and generates shorter, more
 4. Start the server: `npm start`
 
 ## Usage
-1. Open your web browser and navigate to `http://localhost:3000`
+1. Open your web browser and navigate to `http://localhost:8000`
 2. Enter a long URL in the input field and click the "Submit" button
 3. Copy the generated short link and share it with others
 
