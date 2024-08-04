@@ -1,6 +1,12 @@
 const shortid = require("shortid");
 const Url = require("../modals/url");
 
+//get request
+const getAllShortUrl = async (req, res) => {
+  const data = await Url.find({});
+  return res.json(data);
+};
+
 //post request
 const generateNewShortUrl = async (req, res) => {
   const id = shortid(8);
@@ -51,5 +57,5 @@ const totalClicksOnUrl = async (req, res) => {
 module.exports = {
   generateNewShortUrl,
   redirectToNewUrl,
-  totalClicksOnUrl,
+  totalClicksOnUrl,getAllShortUrl
 };
