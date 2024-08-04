@@ -9,15 +9,15 @@ mongoConnect(process.env.URL);
 
 //middleware
 app.use(express.json());
-app.use(express.urlencoded({extended:false}));
+app.use(express.urlencoded({ extended: false }));
 
-app.set("view engine", "ejs");//variable set
-
+app.set("view engine", "ejs"); //variable set
 
 //routes
 app.use("/url", require("./routes/url"));
 
 //server
-app.listen(port, () =>
-  console.log(`Server Started at https://url-shortner-two-gamma.vercel.app:${port}`)
-);
+app.listen(port, () => {
+  console.log(`Server Started at http://localhost:${port}`);
+  // console.log(`Server Started at https://url-shortner-two-gamma.vercel.app:${port}`)
+});
